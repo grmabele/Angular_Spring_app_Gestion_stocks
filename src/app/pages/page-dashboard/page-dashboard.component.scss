@@ -1,0 +1,30 @@
+.main-container {
+  margin: 50px;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+  min-height: 100%; /* Assurez-vous que le row prend toute la hauteur disponible */
+}
+
+.min-height-600 {
+  min-height: 600px; /* Utilisez min-height pour permettre l'extension */
+}
+
+.col-md-2, .col-md-10 {
+  display: flex; /* Utilisez Flexbox pour les colonnes */
+  flex-direction: column; /* Aligne les éléments en colonne */
+  min-height: inherit; /* Hérite de la hauteur minimale du parent */
+}
+
+.min-height_80 {
+  min-height: 80px;
+}
+
+.menu-margin {
+  margin-right: 8px; /* Ajustez la valeur selon vos besoins */
+}
+
+

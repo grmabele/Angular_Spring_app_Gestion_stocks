@@ -1,0 +1,15 @@
+body, html {
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 0; /* Supprime le padding pour éviter le rétrécissement */
+  box-sizing: border-box;
+
+}

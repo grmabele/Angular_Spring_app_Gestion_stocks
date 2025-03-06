@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  background-color: #eff2f5 !important;
+}
+
+.background-grey {
+  background-color: #eff2f5 !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.border-right {
+  border-right: solid 2px #9ca1a6 !important; /* Meilleure visibilité */
+  padding-right: 10px;
+}
+
+.custom-border {
+  border: solid 2px #9ca1a6;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box; /* ✅ Empêche le débordement */
+}
+
+
+.bleu-color {
+  color: #037bfe;
+}
+
+/* Supprime le soulignement des boutons */
+.no-underline {
+  text-decoration: none !important;
+}
+
+.border-right {
+  border-right: solid 2px #9ca1a6;
+  /*padding-top: 10px;
+  padding-bottom: 10px; */
+}
+
+
+
+/*.custom-border > .row > [class^="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}*/
