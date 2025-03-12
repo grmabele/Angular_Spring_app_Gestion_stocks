@@ -6,6 +6,7 @@ import {PaginationComponent} from "../../../composants/pagination/pagination.com
 import {
   DetailMvtStkArticleComponent
 } from "../../../composants/detail-mvt-stk-article/detail-mvt-stk-article.component";
+import {DetailMvtStkComponent} from "../../../composants/detail-mvt-stk/detail-mvt-stk.component";
 
 @Component({
   selector: 'app-page-mvtstk',
@@ -15,19 +16,18 @@ import {
     BouttonActionComponent,
     DetailArticleComponent,
     PaginationComponent,
-    DetailMvtStkArticleComponent
+    DetailMvtStkArticleComponent,
+    DetailMvtStkComponent
   ],
   templateUrl: './page-mvtstk.component.html',
   styleUrl: './page-mvtstk.component.scss'
 })
 export class PageMvtstkComponent {
 
-  // ✅ Fonction qui ouvre/ferme l'accordéon
-  toggleAccordion() {
-    const collapseElement = document.getElementById('collapseThree');
-    if (collapseElement) {
-      collapseElement.classList.toggle('show'); // ✅ Ajoute/enlève la classe "show"
-    }
+  openedAccordion: number | null = null; // Stocke l'accordéon ouvert
+
+  toggleAccordion(index: number) {
+    this.openedAccordion = this.openedAccordion === index ? null : index;
   }
 
 }
