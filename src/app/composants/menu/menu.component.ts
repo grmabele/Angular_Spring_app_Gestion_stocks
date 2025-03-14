@@ -37,7 +37,7 @@ export class MenuComponent implements OnInit {
       icon: 'fa-solid fa-users',
       sousMenu: [
         { id: '31', titre: 'Clients', icon: 'fa-solid fa-user', url: 'clients' },
-        { id: '32', titre: 'Commandes clients', icon: 'fa-solid fa-cart-arrow-down', url: '' }
+        { id: '32', titre: 'Commandes clients', icon: 'fa-solid fa-cart-arrow-down', url: 'commandesclient' }
       ] as Menu[]
     },
     {
@@ -46,7 +46,7 @@ export class MenuComponent implements OnInit {
       icon: 'fa-solid fa-handshake',
       sousMenu: [
         { id: '41', titre: 'Fournisseurs', icon: 'fa-solid fa-truck-loading', url: 'fournisseurs' },
-        { id: '42', titre: 'Commandes fournisseurs', icon: 'fa-solid fa-truck-moving', url: '' }
+        { id: '42', titre: 'Commandes fournisseurs', icon: 'fa-solid fa-truck-moving', url: 'commandesfournisseur' }
       ] as Menu[]
     },
     {

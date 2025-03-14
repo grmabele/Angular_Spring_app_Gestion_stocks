@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output,} from '@angular/core';
+
 
 @Component({
   selector: 'app-boutton-action',
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
   templateUrl: './boutton-action.component.html',
   styleUrl: './boutton-action.component.scss'
 })
-export class BouttonActionComponent {
+export class BouttonActionComponent implements OnInit {
 
+  @Output()
+  clickEvent = new EventEmitter();
+
+  constructor() {}
+
+  ngOnInit() {
+  }
+
+  bouttonNouveauClick() {
+    this.clickEvent.emit();
+  }
 }
