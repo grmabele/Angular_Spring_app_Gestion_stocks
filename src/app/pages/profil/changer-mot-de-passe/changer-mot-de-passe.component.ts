@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-changer-mot-de-passe',
@@ -10,6 +11,21 @@ import {NgOptimizedImage} from "@angular/common";
   templateUrl: './changer-mot-de-passe.component.html',
   styleUrl: './changer-mot-de-passe.component.scss'
 })
-export class ChangerMotDePasseComponent {
+export class ChangerMotDePasseComponent implements OnInit {
 
+  constructor(
+    private router: Router
+  ) {
+  }
+
+  ngOnInit() {
+  }
+
+  cancelClick() {
+    this.router.navigate(['profil'])
+  }
+
+  saveClick() {
+
+  }
 }
